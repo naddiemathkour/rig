@@ -1,0 +1,37 @@
+This directory details some simple steps to creating HTTP servers in GO.
+
+The implementations are barebones mvp's for several different approaches
+to creating HTTP servers. The purpose of this exercise is to better familiarize
+yourself with the steps that are needed to create a backend server in GO.
+
+Many of the principals exibited by the process of creating a back-end in GO are
+transferable to other languages.
+
+The focus of these servers is to provide REST API functionality for CRUD 
+requirements of a project.
+
+To start a server, simply build the go program and run the executable.
+
+To test the server, run the included 'http.sh' file that includes shell
+commands for pinging the running server on localhost:8080. This file was
+created via the following steps:
+  
+  1. Install httpie: 
+    sudo apt install httpie
+  
+  2. Create the http.sh file:
+    touch http.sh
+
+  3. Open the http.sh file and add a shebang on the first line:
+    #!/bin/bash
+
+  4. Add your httpie test calls beneath the shebang:
+    http GET http://localhost:8080/
+    http GET http://localhost:8080/users
+    etc.
+
+  5. Make the http.sh file executable:
+    chmod +x http.sh
+
+  6. Run the executable http.sh file to execute all httpie requests:
+    ./http.sh

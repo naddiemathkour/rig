@@ -28,27 +28,27 @@ To test the server, use the included `http.sh` file, which contains shell comman
 
 1. **Install httpie**:  
    ```bash
-   sudo apt install httpie
+    sudo apt install httpie
    ```
 2. **Create the `http.sh` file**:
   ```bash
-  touch http.sh
+    touch http.sh
   ```
 3. **Add a shebang to the file**:
   ```
-  #!/bin/bash
+    #!/bin/bash
   ```
 4. **Add your httpie test calls**:
   ```
-  http GET http://localhost:8080/
-  http GET http://localhost:8080/users
-  etc...
+    http GET http://localhost:8080/
+    http GET http://localhost:8080/users
+    etc...
   ```
 5. **Make the http.sh file executable**:
   ```bash
-  chmod +x http.sh
+    chmod +x http.sh
   ```
 6. **Run the http.sh file**:
   ```bash
-  ./http.sh
+    ./http.sh
   ```
